@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Shortcut Icon" href="./icon.ico" type="image/x-icon" />
+	<title>Ning</title>
+	<link rel="stylesheet" href="./Todo.css">
+</head>
+
+<body>
+	<div class="fu">
+		<header>
+			<img src="./img.jpg" alt="">
+			<div>
+				<p>To-Do List</p>
+			</div>
+		</header>
+		<p class="text">~ Today I need to ~</p>
+		<nav>
+			<input type="text" placeholder="Add new todo" class="txt" autofocus="autofocus"
+				onkeydown="addTodoList(event)">
+			<button class="add" onclick="addTodoList()">submit</button>
+		</nav>
+		<ul>
+			<!-- <li>
+				<input type="checkbox" id="">
+				<p>lalala</p>
+				<a href="JavaScript:;">X</a>
+			</li> -->
+		</ul>
+		<footer>
+			<div class="ftr">
+				<h5><span id="num">无事项</span></h5>
+				<!-- <button class="button-active">查看所有</button> -->
+				<button onclick="viewAllInfo()" class="button clickButton btn" id="allinfo">查看所有</button>
+				<button onclick="toBeCompleted()" class="button btn" id="completed_todo">待完成</button>
+				<button onclick="completed()" class="button btn" id="completed_order">已完成</button>
+				<button onclick="clearAll()" class="button btn" id="clear_completed">清空所有</button>
+			</div>
+			<!-- <h4 class="kong"> <img src="./nike.png" alt=""> Congrat, you have no more tasks to do</h4> -->
+		</footer>
+	</div>
+</body>
+<script src="./Todo-Ts.js"></script>
+
+</html>
