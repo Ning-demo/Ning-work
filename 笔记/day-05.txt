@@ -1,0 +1,52 @@
+# type和interface的区别
+
+interface：接口，TS 设计出来主要用于定义【对象类型】，可以对【对象】的形状进行描述。
+
+type ：类型别名，为类型创建一个新名称。它并不是一个类型，只是一个别名。
+
+1. interface: **接口可以重复声明**，TS会将它们合并。
+
+#### 2. type的使用
+
+可以定义基本类型,联合类型,元组类型
+
+  2.1 基本类型
+
+```ts
+type StringType = string
+```
+
+ 2.2 联合类型
+
+```ts
+type paramtype = number | string
+```
+
+2.3 元组类型
+
+```ts
+type arrType = [string, string, number]
+```
+
+2.4 定义函数类型--类型别名
+
+```tsx
+type AddFunc = {name: string, age: number}
+```
+### 3. 总结
+
+1、如果需要被 extends 或者 implements, 则尽量使用**接口**。
+
+2、如果需要使用联合类型或者元组类型，**类型别名**会更合适。
+
+3、如果是定义对象或函数，则都可以。
+
+4、如果实在不想选择的话，就能用interface实现，用interface，如果不能就用type。
+
+### 4. **相同点**
+
+1. 都可以描述一个对象或者函数
+
+2.都允许继承(官网话叫拓展 extends)
+
+
