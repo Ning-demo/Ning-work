@@ -21,7 +21,7 @@
 		h1 {
 			text-align: center;
 			font-size: 50px;
-			color: #ffffff;
+			color: #f0da8c;
 		}
 
 		.box {
@@ -37,6 +37,8 @@
 			color: #ffffff;
 			border-radius: 10px;
 			font-size: 35px;
+			font-weight: 700;
+			font-family: '幼圆';
 		}
 
 		footer {
@@ -47,28 +49,32 @@
 		}
 
 		footer button {
+			cursor: pointer;
 			width: 150px;
 			border-radius: 10px;
-			background-color: white;
+			background-color: pink;
 		}
 
 		footer h2 {
 			color: white;
 		}
-		footer h2 span{
-			color: orange;
+
+		footer h2 span {
+			color: blue;
+		}
+
+		footer button:active {
+			transform: rotateZ(10deg);
 		}
 	</style>
 </head>
 
 <body>
 	<h1>点名器</h1>
-	<div class="box">
-
-	</div>
+	<div class="box"></div>
 	<footer>
-		<button type="button" id="btn1">点名</button>
-		<button type="button" id="btn2">一次点俩</button>
+		<button type="button" id="btn1">One</button>
+		<button type="button" id="btn2">Two</button>
 		<h2>幸运儿： <span></span> </h2>
 	</footer>
 </body>
@@ -81,7 +87,8 @@
 		'王凯', '韩庚', '黄磊', '陈晓', '文章', '郑恺', '罗晋', '胡歌',
 		'冯绍峰', '古天乐', '吴磊', '吴京', '贾乃亮', '郭富城', '王祖蓝',
 		'吴秀波', '佟大为', '张若昀', '刘恺威', '孙红雷', '刘烨', '张一山',
-		'黄子韬', '李治廷', '杜淳', '陈坤', '陈柏霖', '董成鹏', '尹正',];
+		'黄子韬', '李治廷', '杜淳', '陈坤', '陈柏霖', '董成鹏', '尹正'
+	];
 	xr()
 	function xr() {
 		arr.forEach(item => {
