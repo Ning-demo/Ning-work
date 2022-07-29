@@ -1,0 +1,56 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 20px;
+}
+table {
+	width: 100%;
+}
+
+thead {
+	background: rgba(153, 153, 153, 0.534);
+	height: 50px;
+}
+
+tbody td {
+	padding: 2px;
+	border: 2px solid #999;
+}
+
+th span {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+}
+
+footer .tx {
+	font-size: 20px;
+}
+
+footer .tx input {
+	height: 25px;
+	width: 45px;
+	text-align: center;
+	font-size: 20px;
+}
+
+footer .nav {
+	display: flex;
+	margin: 0  50px;
+}
+
+.nav div {
+	padding: 5px;
+	border: 1px solid #000;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 3px;
+}

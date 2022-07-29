@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./A_Ts.css">
+</head>
+
+<body>
+	<div>
+		<input class="int" type="text" placeholder="商品名称" onkeydown="search(event)" />
+		<table>
+			<thead>
+				<tr>
+					<th>
+						编号 <span class="bh" onclick="bhpx()">∧</span>
+					</th>
+					<th>名称</th>
+					<th>
+						价格  <span class="jg" onclick="jgpx()">∧</span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		<footer>
+			<div class="tx">
+			  每页 <input value="10" class="Fyinput" min="1" type="number" oninput="changeInput()" />条 ，共10条
+			</div>
+			<div class="nav">
+			  <aside>
+
+			  </aside>
+			</div>
+		  </footer>
+	</div>
+</body>
+<script src="./A_Ts.js"></script>
+</html>
